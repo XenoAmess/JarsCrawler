@@ -1,4 +1,4 @@
-package com.xenoamess.nexus_crawler.domain;
+package com.xenoamess.nexus_crawler.crawler;
 
 import com.xenoamess.nexus_crawler.utils.HCUtils;
 import java.io.BufferedInputStream;
