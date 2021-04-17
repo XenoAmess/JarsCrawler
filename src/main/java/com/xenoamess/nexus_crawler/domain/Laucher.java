@@ -1,6 +1,6 @@
-package com.xenoamess.domain;
+package com.xenoamess.nexus_crawler.domain;
 
-import com.xenoamess.utils.HCUtils;
+import com.xenoamess.nexus_crawler.utils.HCUtils;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
