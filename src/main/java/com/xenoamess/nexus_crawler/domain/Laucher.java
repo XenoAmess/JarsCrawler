@@ -119,6 +119,9 @@ public class Laucher {
         if (beginUrl.endsWith("/")) {
             beginUrl = beginUrl.substring(0, beginUrl.length() - 1);
         }
+        if (linkUrl.startsWith("/")) {
+            linkUrl = linkUrl.substring(1);
+        }
 
         url = beginUrl + "/" + linkUrl;
         res = getElements(url);
@@ -281,6 +284,9 @@ public class Laucher {
 
         if (beginUrl.endsWith("/")) {
             beginUrl = beginUrl.substring(0, beginUrl.length() - 1);
+        }
+        if (linkUrl.startsWith("/")) {
+            linkUrl = linkUrl.substring(1);
         }
 
         url = beginUrl + "/" + linkUrl;
