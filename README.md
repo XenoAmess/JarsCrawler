@@ -1,4 +1,4 @@
 # Nexus Crawler
-爬取nexus仓库的所有jar包
+get all files in a nexus repository.
 
-修改`src/main/resources/crawlers.text`, 然后启动Launcher即可。
+change `src/main/resources/crawlers.text`, and then run `Launcher.java`
