@@ -128,11 +128,6 @@ public class Laucher {
         if (!CollectionUtils.isEmpty(res)) {
             return Pair.of(url, res);
         }
-        url = beginUrl + "/" + linkUrl.replace("/", "");
-        res = getElements(url);
-        if (!CollectionUtils.isEmpty(res)) {
-            return Pair.of(url, res);
-        }
         url = linkUrl;
         res = getElements(url);
         if (!CollectionUtils.isEmpty(res)) {
@@ -290,12 +285,6 @@ public class Laucher {
         }
 
         url = beginUrl + "/" + linkUrl;
-        try {
-            download(url);
-            return;
-        } catch (IOException ignored) {
-        }
-        url = beginUrl + "/" + linkUrl.replace("/", "");
         try {
             download(url);
             return;
